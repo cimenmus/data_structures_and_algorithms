@@ -1,0 +1,123 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2578
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red191\green100\blue38;\red32\green32\blue32;\red254\green187\blue91;
+\red153\green168\blue186;\red133\green96\blue154;\red86\green132\blue173;}
+{\*\expandedcolortbl;;\csgenericrgb\c74902\c39216\c14902;\csgenericrgb\c12549\c12549\c12549;\csgenericrgb\c99608\c73333\c35686;
+\csgenericrgb\c60000\c65882\c72941;\csgenericrgb\c52157\c37647\c60392;\csgenericrgb\c33725\c51765\c67843;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid401\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
+\paperw11905\paperh16837\margl1134\margr1134\margb1134\margt1134\vieww33400\viewh18420\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs48 \cf0 Bubble Sort
+\f1\b0\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+// https://www.programiz.com/dsa/bubble-sort\
+// https://www.geeksforgeeks.org/bubble-sort\
+// https://www.toptal.com/developers/sorting-algorithms\
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf0 Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\li720\fi-720\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screen Shot 2021-05-08 at 18.50.49.png \width9000 \height5000 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2\fs26 \cf2 \cb3 private static void \cf4 bubbleSort\cf5 (\cf2 int\cf5 [] array)\{\
+    \cf2 int \cf5 size = array.\cf6 length\cf2 ;\
+    for \cf5 (\cf2 int \cf5 i = \cf7 0\cf2 ; \cf5 i < size - \cf7 1\cf2 ; \cf5 i++)\{\
+        \cf2 for \cf5 (\cf2 int \cf5 j = \cf7 0\cf2 ; \cf5 j < size - i - \cf7 1\cf2 ; \cf5 j++)\{\
+            \cf2 if \cf5 (array[j] > array[j + \cf7 1\cf5 ])\{\
+                \cf2 int \cf5 temp = array[j]\cf2 ;\
+                \cf5 array[j] = array[j + \cf7 1\cf5 ]\cf2 ;\
+                \cf5 array[j + \cf7 1\cf5 ] = temp\cf2 ;\
+            \cf5 \}\
+        \}\
+    \}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \cb1 \
+\
+\pard\pardeftab720\sl720\sa240\partightenfactor0
+
+\f0\b\fs36 \cf0 Optimized Bubble Sort
+\f1\b0\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural\partightenfactor0
+\cf0 In the above algorithm, all the comparisons are made even if the array is already sorted. This increases the execution time. To solve this, we can introduce an extra variable swapped. The value of swapped is set true if there occurs swapping of elements. Otherwise, it is set false. After an iteration, if there is no swapping, the value of swapped will be false. This means elements are already sorted and there is no need to perform further iterations. This will reduce the execution time and helps to optimize the bubble sort.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2\fs26 \cf2 \cb3 private static void \cf4 optimizedBubbleSort\cf5 (\cf2 int\cf5 [] array)\{\
+    \cf2 int \cf5 size = array.\cf6 length\cf2 ;\
+    for \cf5 (\cf2 int \cf5 i = \cf7 0\cf2 ; \cf5 i < size - \cf7 1\cf2 ; \cf5 i++)\{\
+        \cf2 boolean \cf5 swapped = \cf2 false;\
+        for \cf5 (\cf2 int \cf5 j = \cf7 0\cf2 ; \cf5 j < size - i - \cf7 1\cf2 ; \cf5 j++)\{\
+            \cf2 if \cf5 (array[j] > array[j + \cf7 1\cf5 ])\{\
+                \cf2 int \cf5 temp = array[j]\cf2 ;\
+                \cf5 array[j] = array[j + \cf7 1\cf5 ]\cf2 ;\
+                \cf5 array[j + \cf7 1\cf5 ] = temp\cf2 ;\
+                \cf5 swapped = \cf2 true;\
+            \cf5 \}\
+        \}\
+        \cf2 if \cf5 (!swapped)\{\
+            \cf2 break;\
+        \cf5 \}\
+    \}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \cb1 \
+\pard\pardeftab720\sl720\sa240\partightenfactor0
+
+\f0\b\fs36 \cf0 Time Complexity
+\f1\b0\fs24 \
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\li720\fi-720\pardirnatural\partightenfactor0
+\ls3\ilvl0\cf0 {\listtext	\uc0\u8226 	}Best -> 		O(n) 	 	 -> It is O(n2) for normal Bubble Sort but it is O(n) for Optimized Bubble Sort\
+{\listtext	\uc0\u8226 	}Worst -> 		O(n2)    	 -> We have two loops, n * n = n2\
+{\listtext	\uc0\u8226 	}Average -> 	O(n2)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\pardeftab720\sl720\sa240\partightenfactor0
+
+\f0\b\fs36 \cf0 Space Complexity
+\f1\b0\fs24 \
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\li720\fi-720\pardirnatural\partightenfactor0
+\ls4\ilvl0\cf0 {\listtext	\uc0\u8226 	}O(1) for Normal Bubble Sort, because we used  1 variable for swapping called \'93tmp\'94\
+{\listtext	\uc0\u8226 	}O(2) for Optimized Bubble Sort, we used two variables called \'93tmp\'94 and \'93swapped\'94 for swapping\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\pardeftab720\sl720\sa240\partightenfactor0
+
+\f0\b\fs36 \cf0 Applications
+\f1\b0\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural\partightenfactor0
+\cf0 Bubble sort is used if:\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\li720\fi-720\pardirnatural\partightenfactor0
+\ls5\ilvl0\cf0 {\listtext	\uc0\u8226 	}short and simple code is preferred\
+{\listtext	\uc0\u8226 	}It works well with large datasets where the items are almost sorted because it takes only one iteration to detect whether the list is sorted or not. But if the list is unsorted to a large extend then this algorithm holds good for small datasets or lists. \
+{\listtext	\uc0\u8226 	}This algorithm is fastest on an extremely small or nearly sorted set of data.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\
+\
+}

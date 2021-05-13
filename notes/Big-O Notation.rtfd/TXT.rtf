@@ -1,0 +1,140 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2578
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fnil\fcharset0 LucidaGrande;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\paperw11905\paperh16837\margl1134\margr1134\margb1134\margt1134\vieww33400\viewh18420\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+
+\f1\b\fs48 Big-O Notation
+\f0\b0\fs24 \
+\
+// https://medium.com/kodcular/nedir-bu-big-o-notation-b8b9f1416d30\
+\
+Big-O notation bir algoritman\uc0\u305 n performans\u305 n\u305  veya time complexity\'92sini hesaplamak i\'e7in kullan\u305 l\u305 r.\
+\pard\pardeftab720\sl720\sa240\partightenfactor0
+
+\f1\b\fs36 \cf0 Time Complexity Nedir?
+\f0\b0\fs24 \
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf0 Time complexity bir algoritman\uc0\u305 n \'e7al\u305 \u351 mas\u305  i\'e7in gerekli olan s\'fcredir. Ancak buradaki s\'fcre, saniyeleri hesaplayarak de\u287 il, ka\'e7 tane i\u351 lem ger\'e7ekle\u351 tirdi\u287 ine g\'f6re hesaplanmaktad\u305 r. Uygulama taraf\u305 ndan ger\'e7ekle\u351 tirilen i\u351 lem say\u305 s\u305 , veri setinin b\'fcy\'fckl\'fc\u287 \'fcne ve o veri setindeki elemanlar\u305 na s\u305 ras\u305 na g\'f6re belirlenir.\
+\'d6rne\uc0\u287 in bir dizinin en k\'fc\'e7\'fck eleman\u305 n\u305  bulma i\u351 lemine bakal\u305 m:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screen Shot 2021-05-09 at 17.33.30.png \width10720 \height5660 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}    {{\NeXTGraphic Screen Shot 2021-05-09 at 17.33.37.png \width9000 \height4400 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\
+\
+Sonu\'e7 olarak, 3 i\uc0\u351 lem d\'f6ng\'fcn\'fcn d\u305 \u351 ar\u305 s\u305 nda ve 2 i\u351 lem d\'f6ng\'fc i\'e7erisinde ger\'e7ekle\u351 ir. Bu algoritman\u305 n Time complexity\'92si 2(n) + 3't\'fcr. Genelde bir algoritman\u305 n complexity form\'fcl\'fcnde d\'fc\u351 \'fck \'f6nem ta\u351 \u305 yan de\u287 erler bulunur. \'d6rne\u287 in bulmu\u351  oldu\u287 umuz Time complexity\'92de n de\u287 eri artt\u305 k\'e7a form\'fclde bulunan sabit de\u287 erlerin \'f6nemi azal\u305 r. Bu durumda bu de\u287 erleri yok sayabiliriz. Sonu\'e7 olarak yukar\u305 da ki \'f6rne\u287 imizin Time Complexity\'92si O(N) olur.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screen Shot 2021-05-09 at 17.36.00.png \width6000 \height4990 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+Bir ba\uc0\u351 ka \'f6rnek olarak; Elimizde bir algoritman\u305 n Time complexity de\u287 erinin T(n) =(n^2 + 3n + 4) oldu\u287 unu d\'fc\u351 \'fcnelim. n de\u287 erinin \'e7ok b\'fcy\'fck olmas\u305  durumunda, 3n+4 k\u305 sm\u305 , n^2 k\u305 sm\u305  ile kar\u351 \u305 la\u351 t\u305 r\u305 ld\u305 \u287 \u305 nda \'f6nemsiz hale gelecektir.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screen Shot 2021-05-09 at 17.38.36.png \width7500 \height4050 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+n = 1000 i\'e7in n^2, 1000000 de\uc0\u287 erine sahip olurken 3n + 4, 3004 de\u287 erine sahip olur. Bu y\'fczden bu sabit k\u305 s\u305 mlar\u305  yok sayabiliriz.\
+\
+\
+Time complexity bize bir algoritma i\'e7in 3 durum sunar. 
+\f1\b Best-case
+\f0\b0 , 
+\f1\b average-case 
+\f0\b0 ve 
+\f1\b worst-case
+\f0\b0 .Bu \'fc\'e7 durumu \'f6rnekler ile a\'e7\uc0\u305 klayacak olursak e\u287 er:\
+Elimizde s\uc0\u305 ral\u305  olmayan bir dizi oldu\u287 unu d\'fc\u351 \'fcnelim. \'d6rne\u287 in [5,1,4,2,6,3,7] Bu dizi de arad\u305 \u287 \u305 n\u305 z bir de\u287 eri bulabilmek i\'e7in dizideki t\'fcm index de\u287 erleri ile arad\u305 \u287 \u305 n\u305 z de\u287 erin e\u351 le\u351 mesi gerekmektedir (Linear Search). Bu \'f6rne\u287 in case\'92lerine bir bakal\u305 m:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screen Shot 2021-05-09 at 17.42.31.png \width13440 \height6320 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\pard\pardeftab720\sl720\sa240\partightenfactor0
+
+\f1\b\fs36 \cf0 Big-O terimleri ve Senaryolar\uc0\u305 
+\f0\b0\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screen Shot 2021-05-09 at 17.45.11.png \width9000 \height6790 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf0 {\listtext	\uc0\u8226 	}O(1) 		
+\f2 \uc0\u8594 
+\f0  
+\f1\b Constant: 
+\f0\b0 Elinizde bulunan veri seti ne kadar b\'fcy\'fck olursa olsun, \'e7al\uc0\u305 \u351 t\u305 r\u305 lma s\'fcresi ve kullan\u305 lan kaynak her zaman sabittir.\
+{\listtext	\uc0\u8226 	}O(log n) 		
+\f2 \uc0\u8594 
+\f0  
+\f1\b Logaritmic: 
+\f0\b0 Logarithmic time complexity, genelde her seferinde problemi ikiye b\'f6len algoritmalarda kullan\uc0\u305 l\u305 r.\
+{\listtext	\uc0\u8226 	}O(n) 		
+\f2 \uc0\u8594 
+\f0  
+\f1\b Linear: 
+\f0\b0 Linear complexity\'92de, elimizdeki veri seti artt\uc0\u305 k\'e7a, \'e7al\u305 \u351 t\u305 r\u305 lma s\'fcreside do\u287 ru orant\u305 l\u305  \u351 ekilde art\u305 \u351  g\'f6sterir.\
+{\listtext	\uc0\u8226 	}O(n * log n) 	
+\f2 \uc0\u8594 
+\f0  
+\f1\b Lineatirmich
+\f0\b0 \
+{\listtext	\uc0\u8226 	}O(n^2) 	 	
+\f2 \uc0\u8594 
+\f0  
+\f1\b Quadratic: 
+\f0\b0 Input b\'fcy\'fckl\'fc\uc0\u287 \'fcn\'fcn karesi ile do\u287 ru orant\u305 l\u305 d\u305 r. E\u287 er input b\'fcy\'fckl\'fc\u287 \'fc 2 ise, 4 i\u351 lem ger\'e7ekle\u351 ir. E\u287 er input b\'fcy\'fckl\'fc\u287 \'fc 8 ise, 64 i\u351 lem ger\'e7ekle\u351 ir ve bu \u351 ekilde devam eder. 
+\f1\b Genellikle s\uc0\u305 ralama (sorting) algoritmalar\u305 nda bu complexity g\'f6r\'fcl\'fcr.
+\f0\b0 \
+{\listtext	\uc0\u8226 	}O(c^n)	 	
+\f2 \uc0\u8594 
+\f0  
+\f1\b Exponential: 
+\f0\b0 Base de\uc0\u287 eri (c) 2 olan Exponential Time Complexity\'92de, input N b\'fcy\'fckl\'fc\u287 \'fcnde ise output 2^N olur.\
+{\listtext	\uc0\u8226 	}O(n!) 		
+\f2 \uc0\u8594 
+\f0  
+\f1\b Factorial
+\f0\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\pardeftab720\sl720\sa240\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
